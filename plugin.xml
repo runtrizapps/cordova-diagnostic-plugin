@@ -19,7 +19,6 @@
         <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic">
                 <param name="ios-package" value="Diagnostic" />
-                <param name="onload" value="true" />
             </feature>
         </config-file>
 
@@ -34,7 +33,6 @@
         <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic_Location">
                 <param name="ios-package" value="Diagnostic_Location" />
-                <param name="onload" value="true" />
             </feature>
         </config-file>
 
@@ -64,7 +62,6 @@
         <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic_Bluetooth">
                 <param name="ios-package" value="Diagnostic_Bluetooth" />
-                <param name="onload" value="true" />
             </feature>
         </config-file>
 
@@ -86,7 +83,6 @@
         <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic_Wifi">
                 <param name="ios-package" value="Diagnostic_Wifi" />
-                <param name="onload" value="true" />
             </feature>
         </config-file>
 
@@ -102,7 +98,6 @@
         <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic_Camera">
                 <param name="ios-package" value="Diagnostic_Camera" />
-                <param name="onload" value="true" />
             </feature>
         </config-file>
 
@@ -129,7 +124,6 @@
         <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic_Notifications">
                 <param name="ios-package" value="Diagnostic_Notifications" />
-                <param name="onload" value="true" />
             </feature>
         </config-file>
 
@@ -147,7 +141,6 @@
         <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic_Microphone">
                 <param name="ios-package" value="Diagnostic_Microphone" />
-                <param name="onload" value="true" />
             </feature>
         </config-file>
 
@@ -169,7 +162,6 @@
         <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic_Contacts">
                 <param name="ios-package" value="Diagnostic_Contacts" />
-                <param name="onload" value="true" />
             </feature>
         </config-file>
 
@@ -192,7 +184,6 @@
         <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic_Calendar">
                 <param name="ios-package" value="Diagnostic_Calendar" />
-                <param name="onload" value="true" />
             </feature>
         </config-file>
 
@@ -214,7 +205,6 @@
         <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic_Reminders">
                 <param name="ios-package" value="Diagnostic_Reminders" />
-                <param name="onload" value="true" />
             </feature>
         </config-file>
 
@@ -227,7 +217,7 @@
         <config-file target="*-Info.plist" parent="NSRemindersUsageDescription">
             <string>This app requires reminders access to function properly.</string>
         </config-file>
-        
+
         <header-file src="src/ios/Diagnostic_Reminders.h" />
         <source-file src="src/ios/Diagnostic_Reminders.m" />
         <!--END_MODULE REMINDERS-->
@@ -236,7 +226,6 @@
         <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic_Motion">
                 <param name="ios-package" value="Diagnostic_Motion" />
-                <param name="onload" value="true" />
             </feature>
         </config-file>
 
@@ -259,7 +248,6 @@
         <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic" >
                 <param name="android-package" value="cordova.plugins.Diagnostic"/>
-                <param name="onload" value="true" />
             </feature>
         </config-file>
 
@@ -276,7 +264,6 @@
         <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic_Location" >
                 <param name="android-package" value="cordova.plugins.Diagnostic_Location"/>
-                <param name="onload" value="true" />
             </feature>
         </config-file>
 
@@ -291,7 +278,6 @@
         <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic_Bluetooth" >
                 <param name="android-package" value="cordova.plugins.Diagnostic_Bluetooth"/>
-                <param name="onload" value="true" />
             </feature>
         </config-file>
 
@@ -310,7 +296,6 @@
         <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic_Wifi" >
                 <param name="android-package" value="cordova.plugins.Diagnostic_Wifi"/>
-                <param name="onload" value="true" />
             </feature>
         </config-file>
 
@@ -325,7 +310,6 @@
         <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic_Camera" >
                 <param name="android-package" value="cordova.plugins.Diagnostic_Camera"/>
-                <param name="onload" value="true" />
             </feature>
         </config-file>
 
@@ -340,7 +324,6 @@
         <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic_Notifications" >
                 <param name="android-package" value="cordova.plugins.Diagnostic_Notifications"/>
-                <param name="onload" value="true" />
             </feature>
         </config-file>
 
@@ -373,7 +356,6 @@
         <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic_NFC" >
                 <param name="android-package" value="cordova.plugins.Diagnostic_NFC"/>
-                <param name="onload" value="true" />
             </feature>
         </config-file>
 
@@ -388,7 +370,6 @@
         <config-file target="config.xml" parent="/*">
             <feature name="Diagnostic_External_Storage" >
                 <param name="android-package" value="cordova.plugins.Diagnostic_External_Storage"/>
-                <param name="onload" value="true" />
             </feature>
         </config-file>
 
