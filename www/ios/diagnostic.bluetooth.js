@@ -31,10 +31,10 @@ var Diagnostic_Bluetooth = (function(){
         "POWERED_ON": "powered_on"
     };
 
-    Diagnostic_Bluetooth.reinitBluetooth = function(success){
+    Diagnostic_Bluetooth.reinitBluetooth = function(success, error){
         return cordova.exec(
             success,
-            function() {},
+            error,
             'Diagnostic_Bluetooth',
             'requestBluetoothAuthorization',
             []);
