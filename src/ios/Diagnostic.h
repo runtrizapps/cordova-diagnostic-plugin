@@ -32,6 +32,7 @@ extern NSString*const AUTHORIZATION_GRANTED;
 - (void) switchToSettings: (CDVInvokedUrlCommand*)command;
 - (void) getBackgroundRefreshStatus: (CDVInvokedUrlCommand*)command;
 - (void) getArchitecture: (CDVInvokedUrlCommand*)command;
+- (void) reinit: (CDVInvokedUrlCommand*)command;
 
 // Utilities
 + (id) getInstance;

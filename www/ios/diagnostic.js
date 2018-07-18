@@ -105,6 +105,14 @@ var Diagnostic = (function(){
             []);
     };
 
+    Diagnostic.reinit = function(successCallback, errorCallback) {
+        return cordova.exec(successCallback,
+            function() {},
+            'Diagnostic',
+            'reinit',
+            []);
+    };
+
     /**
      * Returns the background refresh authorization status for the application.
      *
@@ -901,7 +909,7 @@ var Diagnostic = (function(){
             throw "Diagnostic Motion module is not installed";
         }
     };
-    
+
    /**
      * Checks motion authorization status for the application.
      * There's no direct way to determine if authorization was granted or denied, so the Pedometer API is used to indirectly determine this.

@@ -120,6 +120,13 @@ static Diagnostic* diagnostic = nil;
     self.osVersion = [[[UIDevice currentDevice] systemVersion] floatValue];
 }
 
+- (void) reinit: (CDVInvokedUrlCommand*)command {
+    diagnostic = self;
+    
+    CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+}
+
 // https://stackoverflow.com/a/38441011/777265
 - (void) getArchitecture: (CDVInvokedUrlCommand*)command {
     [self.commandDelegate runInBackground:^{
