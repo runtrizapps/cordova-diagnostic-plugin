@@ -34,14 +34,13 @@ static NSString*const LOG_TAG = @"Diagnostic_Bluetooth[native]";
 /********************************/
 - (void) reinitBluetooth: (CDVInvokedUrlCommand*)command
 {
-  diagnostic = [Diagnostic getInstance];
-
   self.bluetoothManager = [[CBCentralManager alloc]
                            initWithDelegate:self
                            queue:dispatch_get_main_queue()
                            options:@{CBCentralManagerOptionShowPowerAlertKey: @(NO)}];
 
-  [diagnostic sendPluginResult:[CDVPluginResult resultWithStatus:CDVCommandStatus_OK] :command];
+  CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsInt:0];
+  [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 
 - (void) isBluetoothAvailable: (CDVInvokedUrlCommand*)command
