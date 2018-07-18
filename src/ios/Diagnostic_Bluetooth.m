@@ -17,7 +17,7 @@ static Diagnostic* diagnostic;
 static NSString*const LOG_TAG = @"Diagnostic_Bluetooth[native]";
 
 - (void)pluginInitialize {
-    
+
     [super pluginInitialize];
 
     diagnostic = [Diagnostic getInstance];
@@ -32,6 +32,10 @@ static NSString*const LOG_TAG = @"Diagnostic_Bluetooth[native]";
 /********************************/
 #pragma mark - Plugin API
 /********************************/
+- (void) reinitBluetooth: (CDVInvokedUrlCommand*)command
+{
+    [self pluginInitialize];
+}
 
 - (void) isBluetoothAvailable: (CDVInvokedUrlCommand*)command
 {

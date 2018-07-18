@@ -31,7 +31,14 @@ var Diagnostic_Bluetooth = (function(){
         "POWERED_ON": "powered_on"
     };
 
-
+    Diagnostic_Bluetooth.reinitBluetooth = function(){
+        return cordova.exec(
+            function() {},
+            function() {},
+            'Diagnostic_Bluetooth',
+            'requestBluetoothAuthorization',
+            []);
+    };
 
     /********************
      *
